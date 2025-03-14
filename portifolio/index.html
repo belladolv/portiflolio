@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Izabella Oliveira</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ícones do Bootstrap (para o GitHub) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    .header-img {
+      width: 100%;
+      height: auto; /* Altura automática para manter a proporção */
+      max-height: 500px; /* Altura máxima da imagem */
+      object-fit: cover; /* Garante que a imagem cubra o espaço */
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .portfolio-item {
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+    }
+    .portfolio-item:hover .overlay {
+      opacity: 1;
+    }
+    .about-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+    .skills-section {
+      background-color: #ffffff;
+      padding: 50px 0;
+    }
+    .skills-section .skill-item {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .skills-section .skill-item i {
+      font-size: 3rem;
+      color: #007bff;
+    }
+    .table-custom {
+      margin-top: 20px;
+    }
+    .table-custom th, .table-custom td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Izabella Oliveira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/belladolv" target="_blank">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Imagem no lugar do banner -->
+  <img src="img/👾🌷.jpg" alt="Imagem de destaque" class="header-img">
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Mim</h2>
+      <p class="text-center">
+        Olá! Meu nome é Izabella Oliveira, sou uma desenvolvedora web apaixonada por criar soluções digitais criativas e funcionais. 
+        Com mais de 5 anos de experiência, já trabalhei em diversos projetos, desde sites institucionais até plataformas complexas. 
+        Meu foco é entregar produtos de alta qualidade, com designs modernos e código limpo. 
+        Adoro desafios e estou sempre em busca de aprender novas tecnologias.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção de Habilidades -->
+  <section id="habilidades" class="skills-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Habilidades</h2>
+      <div class="row">
+        <div class="col-md-4 skill-item">
+          <i class="bi bi-code-slash"></i>
+          <h3>Desenvolvimento Web</h3>
+          <p>HTML, CSS, JavaScript, React, Bootstrap</p>
+        </div>
+        <div class="col-md-4 skill-item">
+          <i class="bi bi-brush"></i>
+          <h3>Design UI/UX</h3>
+          <p>Figma, Adobe XD, Prototipagem</p>
+        </div>
+        <div class="col-md-4 skill-item">
+          <i class="bi bi-gear"></i>
+          <h3>Backend</h3>
+          <p>Node.js, Express, MongoDB</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Portfólio -->
+<section id="portfolio" class="container my-5">
+  <h2 class="text-center mb-4">Portfólio</h2>
+  <div class="row">
+    <!-- Exemplo de item de portfólio -->
+    <div class="col-md-4 portfolio-item">
+      <img src="img/Captura de tela 2025-03-13 151840.png" alt="Projeto 1">
+      <div class="overlay">
+        <div class="text-center">
+          <h3>Site Institucional</h3>
+          <p>Projeto para um blog.</p>
+          <a href="https://github.com/belladolv/projeto1" target="_blank" class="btn btn-primary">Ver Projeto no GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <img src="img/Captura de tela 2025-03-14 142834.png" alt="Projeto 2">
+      <div class="overlay">
+        <div class="text-center">
+          <h3>E-commerce</h3>
+          <p>Corrida Senac.</p>
+          <a href="https://belladolv.github.io/Corrida-senac/" target="_blank" class="btn btn-primary">Ver Projeto no GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <img src="img/Captura de tela 2025-03-14 142948.png" alt="Projeto 3">
+      <div class="overlay">
+        <div class="text-center">
+          <h3>Blog Pessoal</h3>
+          <p>Blog com foco em tecnologia e desenvolvimento web.</p>
+          <a href="https://belladolv.github.io/Ecomerc/site_chanel/" target="_blank" class="btn btn-primary">Ver Projeto no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Seção de Contato -->
+  <section id="contato" class="container my-5">
+    <h2 class="text-center mb-4">Contato</h2>
+    <div class="text-center">
+      <p>Entre em contato comigo através do e-mail ou visite meu GitHub para ver mais projetos:</p>
+      <p>
+        <strong>E-mail:</strong> izabella.oliveira@example.com<br>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/belladolv" target="_blank">
+          <i class="bi bi-github"></i> github.com/seu-usuario-github
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Izabella Oliveira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>hhhhhhhhhhhhhhh
